@@ -4,16 +4,11 @@ import LogIn from './LogIn';
 import Registation from './Registation';
 import Deshbord from './Deshbord';
 import NotFound from './NotFound';
-import Navber from './Navber';
 import About from './About';
 import Contact from './Contact';
 const Router =createBrowserRouter([
     {
       path: "/",
-      element:<Navber></Navber>,
-    },
-    {
-      path: "/home",
       element:<Home></Home>,
     },
     {

@@ -37,7 +37,15 @@ const Contact = () => {
         </div>
       </div>
       <div>
-        <p className="text-2xl text-center text-base-100 font-bold p-2"> mas border</p>
+        <p className="text-2xl text-center text-base-100 font-bold p-2"> Mas border</p>
+
+        {
+
+
+           // all user will displayed here 
+
+
+        }
       </div>
       <Fotter></Fotter>
     </div>
