@@ -3,22 +3,24 @@ import logo from "../assets/logo.png";
 import "../Component/style/Navber.css";
 const Navber = () => {
   return (
-    <div className="navbar bg-base-100 m-0 p-0">
+    <div style={{borderBottom:"1px solid gray"}} className="navbar bg-base-100 m-0 p-0 shadow-2xl">
       <div className="flex-1 lg:ms-40">
-        <img
+       <NavLink to= '/'>
+       <img
           style={{ width: "200px ", height: "100px" }}
           src={logo}
           alt="logo icon "
         />
+       </NavLink>
       </div>
       <div className="flex-end lg:me-40">
         <div className="me-5">
-          <button>
+          <button className="coustom-btn">
             <NavLink  className="text-sm font-bold" to="/about">About</NavLink>
           </button>
         </div>
         <div className="me-5">
-          <button>
+          <button className="coustom-btn">
             <NavLink className="text-sm font-bold" to="/contact">Contact</NavLink>
           </button>
         </div>
@@ -36,16 +38,47 @@ const Navber = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <NavLink to="/deshbord">Deshboard</NavLink>
+            <button className="button ms-2 my-2">
+            <span>
+              {" "}
+              <NavLink
+                to="/deshbord"
+                style={{ textDecoration: "none", color: "#ffff", }}
+              >
+                Deshboard
+              </NavLink>
+            </span>
+            <i></i>
+          </button>
             </li>
-
             <li>
-              <NavLink to="/log-in">Log in</NavLink>
+            <button className="button ms-2  my-2">
+            <span>
+              {" "}
+              <NavLink
+                to="/log-in"
+                style={{ textDecoration: "none", color: "#ffff" }}
+              >
+               Log in
+              </NavLink>
+            </span>
+            <i></i>
+          </button>
             </li>
             <li>
-              <NavLink to="/settings">Settings</NavLink>
+            <button className="button ms-2  my-2">
+            <span>
+              {" "}
+              <NavLink
+                to="/settings"
+                style={{ textDecoration: "none", color: "#ffff" }}
+              >
+               Settings
+              </NavLink>
+            </span>
+            <i></i>
+          </button>
             </li>
-            
           </ul>
         </div>
       </div>

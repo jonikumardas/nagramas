@@ -5,6 +5,8 @@ import Registation from './Registation';
 import Deshbord from './Deshbord';
 import NotFound from './NotFound';
 import Navber from './Navber';
+import About from './About';
+import Contact from './Contact';
 const Router =createBrowserRouter([
     {
       path: "/",
@@ -17,6 +19,18 @@ const Router =createBrowserRouter([
     {
       path: "/log-in",
       element:<LogIn></LogIn>,
+    },
+    {
+      path: "/about",
+      element:<About/>,
+    },
+    {
+      path: "/Contact",
+      element:<Contact/>,
+    },
+    {
+      path: "/register",
+      element:<Registation/>,
     },
     {
       path: "/register",
