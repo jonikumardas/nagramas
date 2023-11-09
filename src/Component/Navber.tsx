@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import "../Component/style/Navber.css";
 const Navber = () => {
   return (
-    <div style={{borderBottom:"1px solid gray"}} className="navbar bg-base-100 m-0 p-0 shadow-2xl">
+    <div style={{borderBottom:"1px solid gray" ,position:"fixed" ,top:"0", zIndex:99999999}} className="navbar bg-base-100 m-0 p-0 shadow-2xl">
       <div className="flex-1 lg:ms-40">
        <NavLink to= '/'>
        <img
@@ -40,7 +40,6 @@ const Navber = () => {
             <li>
             <button className="button ms-2 my-2">
             <span>
-              {" "}
               <NavLink
                 to="/deshbord"
                 style={{ textDecoration: "none", color: "#ffff", }}

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="bg-base-200">
       <Navber></Navber>
-      <div className="flex flex-col lg:flex-row p-5 lg:p-24 about justify-evenly">
+      <div className="flex flex-col lg:flex-row p-5 lg:p-24 about justify-evenly mt-5">
         <div>
           <p className="text-3xl"> আমাদের মেস সম্পর্কে বিস্তারিত ...</p>
           <p className="text-xl"> ১. মেসে সিট সংখ্যা সীমিত।</p>

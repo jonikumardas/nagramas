@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <div>
       <Navber></Navber>
-
-      <div className="card card-side bg-base-100 shadow-xl lg:mx-40 mt-5">
+      <div>
+      <div className="card card-side bg-base-100 shadow-xl lg:mt-28 lg:mx-40">
         <figure>
           <img
             src={sonjoy}
@@ -46,6 +46,7 @@ const Contact = () => {
 
 
         }
+      </div>
       </div>
       <Fotter></Fotter>
     </div>
